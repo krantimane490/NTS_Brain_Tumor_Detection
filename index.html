@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Medical Imaging AI</title>
+    <link rel="stylesheet" href="styles.css"/>
+</head>
+
+<body>
+    <header>
+        <h1>🩺 Medical Imaging AI</h1>
+        <p>Automatically detect tumors and abnormalities in X-rays, MRIs, and CT scans</p>
+    </header>
+
+    <main>
+        <section class="upload-section">
+            <h2>Step 1: Upload Medical Image</h2>
+            <input type="file" id="imageUpload" accept="image/*"/>
+            <button onclick="previewImage()">Preview Image</button>
+
+            <div id="imagePreview" class="image-preview">
+                <p>No image selected</p>
+            </div>
+        </section>
+
+        <section class="result-section">
+            <h2>Step 2: Detection Result</h2>
+            <div id="detectionResult">
+                <p>Processed result will appear here</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2025 Kranti Mane | Medical Imaging AI</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+
+</html>
